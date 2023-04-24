@@ -10,5 +10,5 @@ runs:
   steps:
     - name: Run script
       shell: bash
-      if: ${{ inputs.variable }} != ''
+      if: "${{ inputs.variable }} != ''"
       run: echo "Variable value is ${{ inputs.variable }}"
