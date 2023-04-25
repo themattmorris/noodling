@@ -15,5 +15,3 @@ jobs:
   
       - name: Run it
         uses: ./.github/actions/sample
-        with:
-          variable: "foo"
