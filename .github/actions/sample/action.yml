@@ -2,7 +2,6 @@ name: Sample
 description: Testing it
 inputs:
   variable:
-    type: string
     description: A string
     required: false
 runs:
