@@ -9,5 +9,7 @@ runs:
   steps:
     - name: Run script
       shell: bash
-      if: ${{ inputs.variable }} != ''
-      run: echo "Variable value is ${{ inputs.variable }}"
+      run: |
+        if [ -n "${{ inputs.variable }}" ]; then
+          echo "Variable value is ${{ inputs.variable }}"
+        fi
